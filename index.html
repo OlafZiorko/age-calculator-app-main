@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <!--app-->
+      <div class="app">
+        <!--app header INPUTS-->
+        <header class="header">
+          <form class="form">
+            <div class="wrapper">
+              <div class="inputs__wrapper">
+                <label for="day">Day</label>
+                <input
+                  placeholder="DD"
+                  class="day-input inputs"
+                  type="number"
+                  name="day"
+                  id="day"
+                />
+                <span class="alert-msg"></span>
+              </div>
+              <div class="inputs__wrapper">
+                <label for="day">Month</label>
+                <input
+                  placeholder="MM"
+                  class="month-input inputs"
+                  type="number"
+                  name="month"
+                  id="month"
+                />
+                <span class="alert-msg"></span>
+              </div>
+              <div class="inputs__wrapper">
+                <label for="day">Year</label>
+                <input
+                  placeholder="YYYY"
+                  class="year-input inputs"
+                  type="number"
+                  name="year"
+                  id="year"
+                />
+                <span class="alert-msg"></span>
+              </div>
+            </div>
+            <button class="submit">
+              <img
+                class="arrow"
+                src="./assets/images/icon-arrow.svg"
+                alt="arrp img"
+              />
+            </button>
+
+            <hr class="hr" />
+          </form>
+        </header>
+
+        <!--app BODY-->
+        <section class="app__body">
+          <div class="box">
+            <span class="data data-years">--</span>
+            <h2 class="box--title">years</h2>
+          </div>
+          <div class="box">
+            <span class="data data-months">--</span>
+            <h2 class="box--title">months</h2>
+          </div>
+          <div class="box">
+            <span class="data data-days">--</span>
+            <h2 class="box--title">days</h2>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
